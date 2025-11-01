@@ -1,0 +1,41 @@
+<h1>{{ name() }}</h1>
+
+<dl>
+  <tr>
+    <td>Nombre:</td>
+    <dd>{{ name() }}</dd>
+  </tr>
+
+  <tr>
+    <td>Apellido:</td>
+    <dd>{{ lastName() }}</dd>
+  </tr>
+
+  <tr>
+    <td>Edad:</td>
+    <dd>{{ age() }}</dd>
+  </tr>
+
+  <tr>
+    <td>Nombre Completo:</td>
+    <dd>{{ getFullName() }}</dd>
+  </tr>
+
+  <tr>
+    <td>Nombre y Apellido (Mayúsculas):</td>
+    <!-- Mostrar nombre + apellido en mayúsculas sin crear nueva señal -->
+    <dd>{{ (name() + ' ' + lastName()).toUpperCase() }}</dd>
+  </tr>
+</dl>
+
+<button (click)="changeData()">
+  Cambiar datos
+</button>
+
+<button (click)="changeAge()">
+  Cambiar edad
+</button>
+
+<button (click)="resetData()">
+  Reset
+</button>
