@@ -13,7 +13,7 @@ export class HomePage {
       console.log('*');
       this.counter += 1;
       this.conterSignal.update((v) => v + 1);
-    }, 1000
+    }, 1
   );
   }
   
