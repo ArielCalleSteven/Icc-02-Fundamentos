@@ -35,3 +35,5 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavBar { }
+
+
